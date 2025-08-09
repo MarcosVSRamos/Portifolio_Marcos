@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 export const colors = {
   white: '#dff9fb',
-  black: '#000',
+  black: '#1b1717ff',
   grey: '#535c68',
   blueBlack: '#130f40',
   blue: '#30336b',
@@ -24,7 +24,7 @@ const GlobalCss = createGlobalStyle`
 }
 
 body {
-  background-color: ${colors.blueBlack};
+  background-color: ${colors.black};
   color: ${colors.white};
   }
 
@@ -32,6 +32,7 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+  background-color: ${colors.blueBlack};
 
   @media (max-width: ${breakpoints.desktop}) {
     max-width: 80%;

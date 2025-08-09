@@ -1,8 +1,15 @@
+import * as S from './styles'
+
 const Header = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <S.Div>
+      <h1>Marcos V. S. Ramos</h1>
+      <S.NavBar>
+        <a>Sobre Mim</a>
+        <a>Principais</a>
+        <a>Projetos</a>
+      </S.NavBar>
+    </S.Div>
   )
 }
 
