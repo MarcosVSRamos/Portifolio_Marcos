@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const colors = {
   white: '#dff9fb',
@@ -8,6 +8,11 @@ export const colors = {
   blue: '#30336b',
   green: '#22a6b3'
 }
+
+export const GradientDivider = styled.div`
+  height: 100px;
+  background: linear-gradient(to bottom, ${colors.blueBlack}, ${colors.white});
+`
 
 export const breakpoints = {
   desktop: '1024',
@@ -32,7 +37,6 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  background-color: ${colors.blueBlack};
 
   @media (max-width: ${breakpoints.desktop}) {
     max-width: 80%;

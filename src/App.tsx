@@ -1,6 +1,7 @@
-import GlobalCss from './styles'
+import GlobalCss, { GradientDivider } from './styles'
 import Header from './components/Header'
 import SobreMim from './components/SobreMim'
+import Section from './components/Section'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <GlobalCss />
       <Header />
       <SobreMim />
+      <Section />
     </>
   )
 }

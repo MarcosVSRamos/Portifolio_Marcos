@@ -19,5 +19,6 @@ export const NavBar = styled.nav`
     margin: 0 10px;
     cursor: pointer;
     color: ${colors.green};
+    text-decoration: none;
   }
 `

@@ -5,9 +5,9 @@ const Header = () => {
     <S.Div>
       <h1>Marcos V. S. Ramos</h1>
       <S.NavBar>
-        <a>Sobre Mim</a>
-        <a>Principais</a>
-        <a>Projetos</a>
+        <a href="#sobre-mim">Sobre Mim</a>
+        <a href="#destaques">Destaques</a>
+        <a>All Projects</a>
       </S.NavBar>
     </S.Div>
   )
