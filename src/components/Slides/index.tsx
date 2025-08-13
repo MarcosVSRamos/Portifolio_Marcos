@@ -1,21 +1,67 @@
+import { useEffect, useState } from 'react'
+
 import efood from '../../assets/images/e_food_horizontal.png'
+import portifolio from '../../assets/images/portifolio.png'
+import todoList from '../../assets/images/todolist-horizontal.png'
 import setaEsquerda from '../../assets/images/seta-esquerda.png'
 import setaDireita from '../../assets/images/seta-direita.png'
+
 import * as S from './styles'
-import { useEffect, useRef, useState } from 'react'
 import { useFadeInOnScroll } from '../../utils'
+
+const imagens = [efood, todoList, portifolio]
 
 const Slides = () => {
   useFadeInOnScroll('[data-fade]')
+
+  const [indice, setIndice] = useState(0)
+  const [proximoIndice, setProximoIndice] = useState<number | null>(null)
+  const [direcao, setDirecao] = useState<'left' | 'right'>('right')
+
+  const mudarImagem = (novaDirecao: 'left' | 'right') => {
+    const novo =
+      novaDirecao === 'right'
+        ? (indice + 1) % imagens.length
+        : (indice - 1 + imagens.length) % imagens.length
+
+    setDirecao(novaDirecao)
+    setProximoIndice(novo)
+
+    setTimeout(() => {
+      setIndice(novo)
+      setProximoIndice(null)
+    }, 300)
+  }
+
+  useEffect(() => {
+    const intervalo = window.setInterval(() => mudarImagem('right'), 8000)
+    return () => window.clearInterval(intervalo)
+  }, [indice])
+
   return (
     <S.Div data-fade>
-      <S.Img src={efood} alt="imagens de projetos" />
+      <S.Img
+        key={indice}
+        src={imagens[indice]}
+        alt={`Projeto ${indice + 1}`}
+        className={`atual ${proximoIndice !== null ? `saindo-${direcao}` : ''}`}
+      />
+
+      {proximoIndice !== null && (
+        <S.Img
+          key={proximoIndice}
+          src={imagens[proximoIndice]}
+          alt={`Projeto ${proximoIndice + 1}`}
+          className={`proxima entrando-${direcao}`}
+        />
+      )}
+
       <S.SetasContainer>
-        <button type="button">
-          <img src={setaEsquerda} alt="seta para a esquerda" />
+        <button type="button" onClick={() => mudarImagem('left')}>
+          <img src={setaEsquerda} alt="Anterior" />
         </button>
-        <button type="button">
-          <img src={setaDireita} alt="seta para a direita" />
+        <button type="button" onClick={() => mudarImagem('right')}>
+          <img src={setaDireita} alt="Próximo" />
         </button>
       </S.SetasContainer>
     </S.Div>
