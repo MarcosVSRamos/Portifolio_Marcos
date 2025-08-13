@@ -6,13 +6,13 @@ export const Div = styled.div`
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: ${colors.white};
-  padding-bottom: 40px;
+  background-color: ${colors.ice};
+  padding-bottom: 64px;
   padding-top: 30px;
 `
 
 export const Title = styled.h2`
-  margin: 16px auto 16px;
+  margin: 16px auto 44px;
   width: 160px;
   border-bottom: solid 1px ${colors.black};
   color: ${colors.blueBlack};

@@ -7,7 +7,7 @@ const Header = () => {
       <S.NavBar>
         <a href="#sobre-mim">Sobre Mim</a>
         <a href="#destaques">Destaques</a>
-        <a>All Projects</a>
+        <a href="#projects">All Projects</a>
       </S.NavBar>
     </S.Div>
   )

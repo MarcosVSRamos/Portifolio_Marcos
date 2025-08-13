@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 export const colors = {
   white: '#dff9fb',
+  ice: '#c7ecee',
   black: '#1b1717ff',
   grey: '#535c68',
   blueBlack: '#130f40',
@@ -32,6 +33,19 @@ body {
   background-color: ${colors.black};
   color: ${colors.white};
   }
+
+  [data-fade] {
+    opacity: 0;
+    transform: translateY(16px);
+    will-change: opacity, transform;
+  }
+
+  .fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .6s ease-out, transform .6s ease-out;
+}
+
 
 .container {
   max-width: 1024px;

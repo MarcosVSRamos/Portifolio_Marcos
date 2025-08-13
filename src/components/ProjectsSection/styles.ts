@@ -7,10 +7,10 @@ export const Div = styled.div`
   text-align: center;
   align-items: center;
   background-color: ${colors.blueBlack};
-  padding-bottom: 40px;
+  padding: 40px 0;
 
   h2 {
-    margin: 16px auto 16px;
+    margin: 0 auto 40px;
     width: 160px;
     border-bottom: solid 1px ${colors.grey};
     font-weight: bold;
@@ -20,6 +20,6 @@ export const Div = styled.div`
 
 export const List = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
 `

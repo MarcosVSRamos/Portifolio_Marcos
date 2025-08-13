@@ -5,7 +5,7 @@ export const Div = styled.div`
   height: 100%;
   padding-top: 68px;
   display: block;
-  padding-bottom: 12px;
+  padding-bottom: 60px;
   background-color: ${colors.blueBlack};
 `
 export const HeaderSection = styled.div`

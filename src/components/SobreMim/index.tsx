@@ -4,12 +4,15 @@ import github from '../../assets/images/github.png'
 import gmail from '../../assets/images/gmail.png'
 import linkedin from '../../assets/images/linkedin.png'
 import { GradientDivider } from '../../styles'
+import { useFadeInOnScroll } from '../../utils'
 
 const SobreMim = () => {
+  useFadeInOnScroll('[data-fade]')
+
   return (
-    <>
+    <div>
       <S.Div className="container">
-        <S.HeaderSection>
+        <S.HeaderSection data-fade>
           <S.DivText id="sobre-mim">
             <h3>Quem é Marcos Vinicius</h3>
             <p>
@@ -22,8 +25,8 @@ const SobreMim = () => {
               architecto autem, nostrum praesentium hic eveniet veniam?
             </p>
           </S.DivText>
-          <S.DivLinksAndImg>
-            <S.Image src={perfil} alt="imagem de perfil" />
+          <S.DivLinksAndImg data-fade>
+            <S.Image src={perfil} alt="imagem de perfil" data-fade />
             <S.DivSocialMedia>
               <a href="https://www.linkedin.com/in/marcos-vinicius-santos-ramos-dev">
                 <img src={linkedin} alt="linkedin" />
@@ -37,7 +40,7 @@ const SobreMim = () => {
             </S.DivSocialMedia>
           </S.DivLinksAndImg>
         </S.HeaderSection>
-        <div>
+        <div data-fade>
           <S.Titlle>Conhecimentos e experiências</S.Titlle>
           <S.Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
@@ -51,7 +54,7 @@ const SobreMim = () => {
           </S.Text>
         </div>
       </S.Div>
-    </>
+    </div>
   )
 }
 
