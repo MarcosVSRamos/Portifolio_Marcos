@@ -12,6 +12,7 @@ export const Div = styled.div`
   color: ${colors.green};
   background-color: ${colors.black};
   width: 100%;
+  z-index: 1;
 `
 
 export const NavBar = styled.nav`

@@ -56,6 +56,9 @@ export const DivSocialMedia = styled.div`
     margin: 0 4px;
     img {
       width: 30px;
+      border: solid 1px ${colors.blue};
+      border-radius: 4px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
     }
   }
 `

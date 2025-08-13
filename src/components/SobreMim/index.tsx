@@ -51,8 +51,6 @@ const SobreMim = () => {
           </S.Text>
         </div>
       </S.Div>
-
-      <GradientDivider className="container" />
     </>
   )
 }

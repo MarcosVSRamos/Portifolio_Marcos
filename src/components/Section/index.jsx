@@ -1,24 +1,12 @@
 import Card from '../Card'
+import Slides from '../Slides'
 import * as S from './styles'
 
 const Section = () => {
   return (
     <S.Div className="container">
-      <h2 id="destaques">Destaques</h2>
-      <S.List>
-        <li>
-          <Card />
-        </li>
-        <li>
-          <Card />
-        </li>
-        <li>
-          <Card />
-        </li>
-        <li>
-          <Card />
-        </li>
-      </S.List>
+      <S.Title id="destaques">Destaques</S.Title>
+      <Slides />
     </S.Div>
   )
 }

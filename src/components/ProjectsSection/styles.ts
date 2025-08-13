@@ -6,18 +6,16 @@ export const Div = styled.div`
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: ${colors.white};
+  background-color: ${colors.blueBlack};
   padding-bottom: 40px;
-  padding-top: 30px;
-`
 
-export const Title = styled.h2`
-  margin: 16px auto 16px;
-  width: 160px;
-  border-bottom: solid 1px ${colors.black};
-  color: ${colors.blueBlack};
-  font-weight: bold;
-  font-size: 32px;
+  h2 {
+    margin: 16px auto 16px;
+    width: 160px;
+    border-bottom: solid 1px ${colors.grey};
+    font-weight: bold;
+    font-size: 32px;
+  }
 `
 
 export const List = styled.ul`
