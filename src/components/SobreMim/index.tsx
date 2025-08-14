@@ -11,9 +11,9 @@ const SobreMim = () => {
 
   return (
     <div>
-      <S.Div className="container">
+      <S.Div id="sobre-mim" className="container">
         <S.HeaderSection data-fade>
-          <S.DivText id="sobre-mim">
+          <S.DivText>
             <h3>Quem é Marcos Vinicius</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam

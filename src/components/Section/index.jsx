@@ -4,8 +4,8 @@ import * as S from './styles'
 
 const Section = () => {
   return (
-    <S.Div className="container">
-      <S.Title id="destaques">Destaques</S.Title>
+    <S.Div id="destaques" className="container">
+      <S.Title>Destaques</S.Title>
       <Slides />
     </S.Div>
   )

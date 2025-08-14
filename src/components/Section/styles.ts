@@ -8,11 +8,11 @@ export const Div = styled.div`
   align-items: center;
   background-color: ${colors.ice};
   padding-bottom: 64px;
-  padding-top: 30px;
+  padding-top: 22px;
 `
 
 export const Title = styled.h2`
-  margin: 16px auto 44px;
+  margin: 12px auto 28px;
   width: 160px;
   border-bottom: solid 1px ${colors.black};
   color: ${colors.blueBlack};

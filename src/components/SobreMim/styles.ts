@@ -3,7 +3,7 @@ import { colors } from '../../styles'
 
 export const Div = styled.div`
   height: 100%;
-  padding-top: 68px;
+  padding-top: 48px;
   display: block;
   padding-bottom: 60px;
   background-color: ${colors.blueBlack};
@@ -69,7 +69,7 @@ export const Text = styled.p`
   color: ${colors.green};
 `
 export const Titlle = styled.h4`
-  margin: 38px auto 18px;
+  margin: 18px auto 18px;
   width: 340px;
   text-align: center;
   border-bottom: solid 1px ${colors.grey};

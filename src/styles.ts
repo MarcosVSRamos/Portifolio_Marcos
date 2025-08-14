@@ -21,6 +21,11 @@ export const breakpoints = {
 }
 
 const GlobalCss = createGlobalStyle`
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   *{
   margin: 0;
   padding: 0;
@@ -51,6 +56,7 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+  scroll-margin-top: 80px;
 
   @media (max-width: ${breakpoints.desktop}) {
     max-width: 80%;

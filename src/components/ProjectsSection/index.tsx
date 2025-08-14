@@ -6,8 +6,8 @@ const ProjectsSection = () => {
   useFadeInOnScroll('[data-fade]')
 
   return (
-    <S.Div className="container">
-      <h2 id="projects">Projetos</h2>
+    <S.Div id="projects" className="container">
+      <h2>Projetos</h2>
       <S.List>
         <li data-fade data-fade-delay="100">
           <Card />
