@@ -14,7 +14,6 @@ export function useFadeInOnScroll(
           if (!entry.isIntersecting) return
           const el = entry.target
 
-          // delay automático por ordem, se quiser
           if (stagger && !el.dataset.fadeDelay) {
             const idx = Array.from(elements).indexOf(el)
             el.style.transitionDelay = `${idx * stagger}ms`

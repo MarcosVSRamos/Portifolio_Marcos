@@ -4,6 +4,7 @@ import SobreMim from './components/SobreMim'
 import Section from './components/Section'
 import ProjectsSection from './components/ProjectsSection'
 import Footer from './components/Footer'
+import { projects } from './components/services/api'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <SobreMim />
       <Section />
-      <ProjectsSection />
+      <ProjectsSection projects={projects} />
       <Footer />
     </>
   )

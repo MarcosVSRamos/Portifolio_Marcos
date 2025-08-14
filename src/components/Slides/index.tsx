@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react'
 
-import efood from '../../assets/images/e_food_horizontal.png'
-import portifolio from '../../assets/images/portifolio.png'
-import todoList from '../../assets/images/todolist-horizontal.png'
 import setaEsquerda from '../../assets/images/seta-esquerda.png'
 import setaDireita from '../../assets/images/seta-direita.png'
 
 import * as S from './styles'
 import { useFadeInOnScroll } from '../../utils'
+import { projects } from '../services/api'
 
-const imagens = [efood, todoList, portifolio]
+const imagens = projects
+  .filter((project) => project.emphasis)
+  .map((project) => project.banner)
 
 const Slides = () => {
   useFadeInOnScroll('[data-fade]')

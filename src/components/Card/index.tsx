@@ -1,21 +1,22 @@
-import efood from '../../assets/images/e_food_vertical.png'
+import { Project } from '../services/api'
 import * as S from './styles'
 
-const Card = () => {
+type Props = {
+  project: Project
+}
+
+const Card = ({ project }: Props) => {
   return (
-    <S.DivCard>
+    <S.DivCard id={project.id}>
       <S.DivImage>
         <S.Tag>
-          <span>Destaque</span>
-          <span>React.Js</span>
+          {project.emphasis && <span>Destaque</span>}
+          <span>{project.language}</span>
         </S.Tag>
-        <S.Img src={efood} alt="site de restaurantes" />
+        <S.Img src={project.background} alt="site de restaurantes" />
       </S.DivImage>
-      <h4>Site de Restaurantes</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-        saepe, porro vel explicabo sunt odio
-      </p>
+      <h4>{project.title}</h4>
+      <p>{project.description}</p>
       <S.Button type="button">Saiba Mais</S.Button>
     </S.DivCard>
   )
