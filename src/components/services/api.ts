@@ -95,3 +95,5 @@ export const projects: Project[] = [
     linkVersel: 'https://exercicio-m21-terraria.vercel.app/'
   }
 ]
+
+export const projetosDestaque = projects.filter((p) => p.emphasis)

@@ -52,6 +52,23 @@ export const Img = styled.img`
   }
 `
 
+export const TitleBanner = styled.h3`
+  position: absolute;
+  display: block;
+  rigth: 50%;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 26px 0;
+  text-align: center;
+  color: ${colors.ice};
+  background: rgba(0, 0, 0, 0.4);
+`
+
 export const SetasContainer = styled.div`
   position: absolute;
   top: 40%;

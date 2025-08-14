@@ -5,11 +5,7 @@ import setaDireita from '../../assets/images/seta-direita.png'
 
 import * as S from './styles'
 import { useFadeInOnScroll } from '../../utils'
-import { projects } from '../services/api'
-
-const imagens = projects
-  .filter((project) => project.emphasis)
-  .map((project) => project.banner)
+import { projetosDestaque } from '../services/api'
 
 const Slides = () => {
   useFadeInOnScroll('[data-fade]')
@@ -18,16 +14,21 @@ const Slides = () => {
   const [proximoIndice, setProximoIndice] = useState<number | null>(null)
   const [direcao, setDirecao] = useState<'left' | 'right'>('right')
 
+  const total = projetosDestaque.length
+  const projetoAtual = projetosDestaque[indice]
+  const projetoProximo =
+    proximoIndice !== null ? projetosDestaque[proximoIndice] : null
+
   const mudarImagem = (novaDirecao: 'left' | 'right') => {
     const novo =
       novaDirecao === 'right'
-        ? (indice + 1) % imagens.length
-        : (indice - 1 + imagens.length) % imagens.length
+        ? (indice + 1) % total
+        : (indice - 1 + total) % total
 
     setDirecao(novaDirecao)
     setProximoIndice(novo)
 
-    setTimeout(() => {
+    window.setTimeout(() => {
       setIndice(novo)
       setProximoIndice(null)
     }, 300)
@@ -38,23 +39,29 @@ const Slides = () => {
     return () => window.clearInterval(intervalo)
   }, [indice])
 
+  if (!projetosDestaque || projetosDestaque.length === 0) {
+    return <h2>Carregando...</h2>
+  }
+
   return (
     <S.Div data-fade>
       <S.Img
-        key={indice}
-        src={imagens[indice]}
-        alt={`Projeto ${indice + 1}`}
+        key={`atual-${indice}`}
+        src={projetoAtual.banner}
+        alt={`Projeto ${projetoAtual.title}`}
         className={`atual ${proximoIndice !== null ? `saindo-${direcao}` : ''}`}
       />
 
       {proximoIndice !== null && (
         <S.Img
-          key={proximoIndice}
-          src={imagens[proximoIndice]}
-          alt={`Projeto ${proximoIndice + 1}`}
+          key={`proxima-${proximoIndice}`}
+          src={projetoProximo?.banner}
+          alt={`Projeto ${projetoProximo?.title}`}
           className={`proxima entrando-${direcao}`}
         />
       )}
+
+      <S.TitleBanner>{projetoAtual.title}</S.TitleBanner>
 
       <S.SetasContainer>
         <button type="button" onClick={() => mudarImagem('left')}>
