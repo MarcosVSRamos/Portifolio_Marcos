@@ -6,6 +6,8 @@ import backgroundEplay from '../../assets/images/e-play/section.png'
 import bannerEplay from '../../assets/images/e-play/galleryBanner.png'
 import bannerTerraria from '../../assets/images/terraria/bannerHome.png'
 import backgroundTerraria from '../../assets/images/terraria/bannerWiki.png'
+import backgroundTestes from '../../assets/images/testes/backgroundTestes.png'
+import bannerTestes from '../../assets/images/testes/backgroundTestes.png'
 
 export type Project = {
   id: string
@@ -93,6 +95,20 @@ export const projects: Project[] = [
     linkGithub:
       'https://github.com/MarcosVSRamos/exercicio-M21-terraria?tab=readme-ov-file',
     linkVersel: 'https://exercicio-m21-terraria.vercel.app/'
+  },
+  {
+    id: '5',
+    title: 'Prática de testes',
+    description:
+      'Um site de restaurantes com seus respectivos cardápios. Desenvolvido em React com requisições de API por AJAX',
+    emphasis: false,
+    language: 'TypeScript',
+    banner: bannerTestes,
+    background: backgroundTestes,
+    languagesAndFrameworks: ['TypeScript', 'CSS', 'HTML'],
+    gallery: [bannerTestes, bannerTestes],
+    linkGithub: 'https://github.com/MarcosVSRamos/exercicio-M33_tests-main',
+    linkVersel: 'https://github.com/MarcosVSRamos/exercicio-M33_tests-main'
   }
 ]
 
