@@ -5,7 +5,7 @@ import setaDireita from '../../assets/images/seta-direita.png'
 
 import * as S from './styles'
 import { useFadeInOnScroll } from '../../utils'
-import { projetosDestaque } from '../services/api'
+import { projetosDestaque } from '../../services/api'
 
 const Slides = () => {
   useFadeInOnScroll('[data-fade]')

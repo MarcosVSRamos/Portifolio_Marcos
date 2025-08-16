@@ -19,6 +19,7 @@ export const DivCard = styled.div`
 export const DivImage = styled.div`
   position: relative;
 `
+
 export const Tag = styled.div`
   position: absolute;
   display: flex;
@@ -32,6 +33,11 @@ export const Tag = styled.div`
     padding: 2px 6px;
     margin: 8px 4px 0;
     border-radius: 8px;
+  }
+
+  .profissional {
+    background-color: ${colors.gold};
+    color: ${colors.black};
   }
 `
 
@@ -48,4 +54,5 @@ export const Img = styled.img`
   width: 96%;
   margin-top: 4px;
   object-fit: cover;
+  cursor: pointer;
 `

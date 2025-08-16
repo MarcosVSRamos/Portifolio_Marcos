@@ -7,7 +7,8 @@ export const colors = {
   grey: '#535c68',
   blueBlack: '#130f40',
   blue: '#30336b',
-  green: '#22a6b3'
+  green: '#22a6b3',
+  gold: '#f9ca24'
 }
 
 export const GradientDivider = styled.div`
@@ -60,6 +61,10 @@ body {
 
   @media (max-width: ${breakpoints.desktop}) {
     max-width: 80%;
+  }
+
+  .relative {
+    position: relative;
   }
 }
 `
