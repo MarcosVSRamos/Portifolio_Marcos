@@ -20,6 +20,7 @@ import backgroundTerraria from '../assets/images/terraria/bannerWiki.png'
 
 import backgroundTestes from '../assets/images/testes/backgroundTestes.png'
 import bannerTestes from '../assets/images/testes/backgroundTestes.png'
+import banner2Testes from '../assets/images/testes/cmd.png'
 
 export type Project = {
   id: string
@@ -60,16 +61,17 @@ export const projects: Project[] = [
     id: '2',
     title: 'TecNet Workspace',
     description:
-      'Um site de restaurantes com seus respectivos cardápios. Desenvolvido em React com requisições de API por AJAX',
+      'Este é um dos trabalhos proficionais do qual participei. Desenvolvi um app React para acesso de localizações e gestão de backups de equipamentos de rede com duas seções de downloads de backups organizados por torre, equipamento e região.',
     emphasis: false,
     profissional: true,
-    language: 'React.js',
+    language: 'React',
     banner: bannerTecNet,
     background: backgroundTecNet,
     languagesAndFrameworks: [
-      'Reactj',
+      'React',
       'Styled-Components',
       'Redux',
+      'Sass',
       'React-Router-Dom'
     ],
     gallery: [menuTecNet, loginTecNet, bannerTecNet, backupsTecNet]
@@ -91,7 +93,7 @@ export const projects: Project[] = [
     ],
     gallery: [bannerEplay, banner2Eplay, banner3Eplay, backgroundEplay],
     linkGithub: 'https://github.com/MarcosVSRamos/projetoFinalFront',
-    linkVersel: 'https://github.com/MarcosVSRamos/projetoFinalFront'
+    linkVersel: 'https://e-play-pearl.vercel.app/'
   },
   {
     id: '4',
@@ -118,9 +120,8 @@ export const projects: Project[] = [
     banner: bannerTestes,
     background: backgroundTestes,
     languagesAndFrameworks: ['TypeScript', 'CSS', 'HTML'],
-    gallery: [bannerTestes, bannerTestes],
-    linkGithub: 'https://github.com/MarcosVSRamos/exercicio-M33_tests-main',
-    linkVersel: 'https://github.com/MarcosVSRamos/exercicio-M33_tests-main'
+    gallery: [bannerTestes, banner2Testes],
+    linkGithub: 'https://github.com/MarcosVSRamos/exercicio-M33_tests'
   }
 ]
 

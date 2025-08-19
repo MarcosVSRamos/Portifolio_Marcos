@@ -52,6 +52,7 @@ export const InfosDiv = styled.div`
   justify-content: center;
   gap: 16px;
   height: 90%;
+  margin: 0 18px;
 `
 
 export const TextDetails = styled.div`
@@ -76,44 +77,47 @@ export const TextDetails = styled.div`
     }
   }
 `
-export const Links = styled.div`
-  > a {
-    background-color: ${colors.green};
-    color: ${colors.black};
-    height: 22px;
-    margin: 0 4px;
-    padding: 2px 8px;
-    text-decoration: none;
-    border-radius: 8px;
-    border: solid 1px ${colors.grey};
 
-    &:hover {
-      background-color: ${colors.ice};
-      color: ${colors.blueBlack};
-    }
+export const LinkLanguages = styled.span`
+  font-weight: bold;
+  font-size: 12px;
+  background-color: ${colors.blue};
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 2px 4px;
+  margin: 2px 2px;
+
+  a {
+    display: inline-block;
+    color: ${colors.ice};
+    background-color: ${colors.blue};
+    white-space: nowrap;
+    text-decoration: none;
   }
 `
+
+export const LinkProjects = styled.a`
+  background-color: ${colors.green};
+  color: ${colors.black};
+  height: 22px;
+  margin: 0 4px;
+  padding: 2px 8px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: solid 1px ${colors.grey};
+
+  &:hover {
+    background-color: ${colors.ice};
+    color: ${colors.blueBlack};
+  }
+`
+
 export const Langs = styled.div`
   margin-bottom: 24px;
 
   .litle-title {
     font-size: 12px;
     margin-bottom: 8px;
-  }
-
-  span {
-    font-weight: bold;
-    font-size: 12px;
-    background-color: ${colors.blue};
-    margin: 0 4px;
-    padding: 2px 4px;
-    border-radius: 8px;
-    cursor: pointer;
-
-    a {
-      color: ${colors.ice};
-      background-color: ${colors.blue};
-    }
   }
 `
 
@@ -130,4 +134,8 @@ export const Images = styled.div`
     object-fit: cover;
     border-radius: 8px;
   }
+`
+
+export const TextProject = styled.p`
+  font-size: 12px;
 `

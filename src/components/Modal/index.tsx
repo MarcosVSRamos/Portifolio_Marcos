@@ -32,27 +32,35 @@ const Modal = ({ project, isVisible, onClose }: Props) => {
                 arquivo json
               </p>
             </div>
-            <S.Links>
+            <div>
               <S.Langs>
                 <h4 className="litle-title">
                   Principais linguagens e ferramentas utilizadas:
                 </h4>
-                <span>
-                  <a href="#">React</a>
-                </span>
-                <span>
-                  <a href="#">React</a>
-                </span>
-                <span>
-                  <a href="#">React</a>
-                </span>
-                <span>
-                  <a href="#">React</a>
-                </span>
+                {project?.languagesAndFrameworks.map((lang, index) => (
+                  <S.LinkLanguages key={index}>
+                    <a
+                      href={`https://google.com/search?q=language-or-framework-${lang.toLowerCase()}`}
+                    >
+                      {lang}
+                    </a>
+                  </S.LinkLanguages>
+                ))}
               </S.Langs>
-              <a href="#">Link para o GitHub</a>
-              <a href="#">Link para o Deploy</a>
-            </S.Links>
+              {project?.linkGithub && (
+                <S.LinkProjects href="#">Link para o GitHub</S.LinkProjects>
+              )}
+              {project?.linkVersel && (
+                <S.LinkProjects href="#">Link para o Deploy</S.LinkProjects>
+              )}
+            </div>
+            {project?.profissional && (
+              <S.TextProject>
+                Este projeto foi desenvolvido em ambiente profissional. Em
+                respeito a cláusulas de confidencialidade e segurança, os links
+                de acesso não podem ser divulgados.
+              </S.TextProject>
+            )}
           </S.TextDetails>
           <S.Images>
             {project?.gallery?.length ? (
