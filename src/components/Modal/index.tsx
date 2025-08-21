@@ -22,15 +22,7 @@ const Modal = ({ project, isVisible, onClose }: Props) => {
           <S.TextDetails>
             <div>
               <h4>{project?.title}</h4>
-              <p>
-                Este projeto tem o intuito de praticar e desenvolver algumas
-                habilidades na programação front-end criando um site com o tema
-                do jogo Terraria. Principais ferramentas e linguagens
-                utilizadas: JavaScript; SCSS; HTML; Gulp Neste projeto estou
-                usando algumas versões de pré-processadores desatualizadas para
-                fins de compatibilidade, você poderá verificar as versões no
-                arquivo json
-              </p>
+              <p>{project?.description}</p>
             </div>
             <div>
               <S.Langs>
@@ -48,13 +40,17 @@ const Modal = ({ project, isVisible, onClose }: Props) => {
                 ))}
               </S.Langs>
               {project?.linkGithub && (
-                <S.LinkProjects href="#">Link para o GitHub</S.LinkProjects>
+                <S.LinkProjects href={project.linkGithub}>
+                  Link para o GitHub
+                </S.LinkProjects>
               )}
               {project?.linkVersel && (
-                <S.LinkProjects href="#">Link para o Deploy</S.LinkProjects>
+                <S.LinkProjects href={project.linkVersel}>
+                  Link para o Deploy
+                </S.LinkProjects>
               )}
             </div>
-            {project?.profissional && (
+            {project?.profissional && !project.linkGithub && (
               <S.TextProject>
                 Este projeto foi desenvolvido em ambiente profissional. Em
                 respeito a cláusulas de confidencialidade e segurança, os links
