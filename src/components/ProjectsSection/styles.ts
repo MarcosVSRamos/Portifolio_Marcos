@@ -6,7 +6,9 @@ export const Div = styled.div`
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: ${colors.blueBlack};
+  background: ${colors.efeitoBlue1};
+  backdrop-filter: blur(8px);
+  border: 1px solid ${colors.efeitoBorda};
   padding: 40px 0;
 
   h2 {

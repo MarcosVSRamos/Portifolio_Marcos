@@ -5,9 +5,13 @@ import setaDireita from '../../assets/images/seta-direita.png'
 
 import * as S from './styles'
 import { useFadeInOnScroll } from '../../utils'
-import { projetosDestaque } from '../../services/api'
+import { Project, projetosDestaque } from '../../services/api'
 
-const Slides = () => {
+type Props = {
+  onOpenModal: (project: Project) => void
+}
+
+const Slides = ({ onOpenModal }: Props) => {
   useFadeInOnScroll('[data-fade]')
 
   const [indice, setIndice] = useState(0)
@@ -46,6 +50,7 @@ const Slides = () => {
   return (
     <S.Div data-fade>
       <S.Img
+        onClick={() => onOpenModal(projetoAtual)}
         key={`atual-${indice}`}
         src={projetoAtual.banner}
         alt={`Projeto ${projetoAtual.title}`}

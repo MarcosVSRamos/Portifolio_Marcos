@@ -3,10 +3,12 @@ import { colors } from '../../styles'
 
 export const Div = styled.div`
   height: 100%;
-  padding-top: 48px;
+  padding-top: 88px;
   display: block;
-  padding-bottom: 60px;
-  background-color: ${colors.blueBlack};
+  padding-bottom: 104px;
+  background: ${colors.efeitoBlue1};
+  backdrop-filter: blur(8px);
+  border: 1px solid ${colors.efeitoBorda};
 `
 export const HeaderSection = styled.div`
   display: flex;

@@ -16,13 +16,17 @@ const SobreMim = () => {
           <S.DivText>
             <h3>Quem é Marcos Vinicius</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              quisquam nam recusandae, vero laboriosam eos repellendus illo et
-              iste cupiditate aliquam error molestias enim, totam, ab non odio
-              unde animi. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quidem repellendus dolores delectus sit quisquam! Tempore
-              reiciendis esse omnis libero sapiente adipisci dolor doloremque
-              architecto autem, nostrum praesentium hic eveniet veniam?
+              Olá, meu nome é Marcos Vinicius Santos Ramos e este portfólio foi
+              criado para compartilhar um pouco da minha trajetória, meus
+              projetos e minhas experiências na área de tecnologia. Sempre fui
+              movido pela curiosidade em entender como as coisas funcionam, e
+              essa curiosidade acabou me levando para o mundo da tecnologia da
+              informação. Aqui você vai encontrar alguns dos trabalhos que
+              desenvolvi ao longo do meu aprendizado, desde projetos acadêmicos
+              até experimentos pessoais que me ajudaram a evoluir como
+              profissional. Minha intenção é usar este espaço como uma vitrine
+              para mostrar quem eu sou, como penso e de que forma posso
+              contribuir para novos desafios no mercado de trabalho.
             </p>
           </S.DivText>
           <S.DivLinksAndImg data-fade>
@@ -43,14 +47,19 @@ const SobreMim = () => {
         <div data-fade>
           <S.Titlle>Conhecimentos e experiências</S.Titlle>
           <S.Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            quibusdam animi architecto suscipit ducimus dolores, aut laboriosam
-            culpa doloremque pariatur temporibus expedita dolor omnis repellat
-            itaque voluptatibus alias, molestiae hic. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Inventore, hic temporibus?
-            Pariatur veniam dolores minus autem sint. Nesciunt reprehenderit
-            quidem cupiditate assumenda commodi fuga sunt, quas nihil! Quas, est
-            qui.
+            Atualmente, venho aprofundando meus estudos em desenvolvimento web e
+            programação por meio da EBAC (Escola Britânica de Artes Criativas e
+            Tecnologia), explorando linguagens e ferramentas como JavaScript,
+            TypeScript, React, Node.js e conceitos de banco de dados e redes.
+            Minha formação inicial em telecomunicações me deu uma base sólida em
+            infraestrutura, redes e resolução de problemas técnicos, o que
+            complementa meu caminho atual no desenvolvimento de software. Para
+            2026, pretendo iniciar a graduação em Sistemas de Informação,
+            consolidando uma formação acadêmica que alinhe teoria e prática no
+            universo da tecnologia. Meu objetivo é crescer como desenvolvedor,
+            integrando conhecimentos de programação, redes e sistemas para atuar
+            em projetos inovadores que unam eficiência técnica e soluções
+            criativas.
           </S.Text>
         </div>
       </S.Div>

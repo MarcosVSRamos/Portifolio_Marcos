@@ -39,6 +39,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    //E-Food
     id: '1',
     title: 'E-FOOD',
     description:
@@ -51,13 +52,17 @@ export const projects: Project[] = [
       'Reactj',
       'Styled-Components',
       'Redux',
-      'React-Router-Dom'
+      'React-Router-Dom',
+      'Yup',
+      'API-AJAX',
+      'Figma'
     ],
     gallery: [bannerEfood, detailsEfood, banner2Efood, backgroundEfood],
     linkGithub: 'https://github.com/MarcosVSRamos/E-FOOD-M34',
     linkVersel: 'https://e-food-lake-chi.vercel.app/'
   },
   {
+    //TecNet
     id: '2',
     title: 'TecNet Workspace',
     description:
@@ -77,10 +82,11 @@ export const projects: Project[] = [
     gallery: [menuTecNet, loginTecNet, bannerTecNet, backupsTecNet]
   },
   {
+    //E-Play
     id: '3',
     title: 'E-Play',
     description:
-      'Um site de restaurantes com seus respectivos cardápios. Desenvolvido em React com requisições de API por AJAX',
+      'Este é um projeto que desenvolvi durante os módulos da etapa Front-End do curso Full-Stack em Java na EBAC. O projeto simula um E-Comerce e jogos digitais, contendo: Página inicial com destaque, banners de destaque do dia (alternação altomática), seções de bibliotecas separadas por categorias, menu individual com galeria para cada jogo, sistema de carrinho com calculo de valor total e parcelas, sistema de conclusão de compra e cadastro com retorno de id do pedido.',
     emphasis: true,
     language: 'React.js',
     banner: bannerEplay,
@@ -89,13 +95,19 @@ export const projects: Project[] = [
       'Reactj',
       'Styled-Components',
       'Redux',
-      'React-Router-Dom'
+      'React-Router-Dom',
+      'React-Router-Hash-Link',
+      'Yup',
+      'Tolkit',
+      'Figma',
+      'API-AJAX'
     ],
     gallery: [bannerEplay, banner2Eplay, banner3Eplay, backgroundEplay],
     linkGithub: 'https://github.com/MarcosVSRamos/projetoFinalFront',
     linkVersel: 'https://e-play-pearl.vercel.app/'
   },
   {
+    //Terraria
     id: '4',
     title: 'Terraria Wiki',
     description:
@@ -111,10 +123,11 @@ export const projects: Project[] = [
     linkVersel: 'https://exercicio-m21-terraria.vercel.app/'
   },
   {
+    //Testes
     id: '5',
     title: 'Prática de testes',
     description:
-      'Um site de restaurantes com seus respectivos cardápios. Desenvolvido em React com requisições de API por AJAX',
+      'Este é um simples projeto para consolidação de conhecimentos e experiencia com a prática de testes',
     emphasis: false,
     language: 'TypeScript',
     banner: bannerTestes,

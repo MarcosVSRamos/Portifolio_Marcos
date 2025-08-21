@@ -1,12 +1,17 @@
 import Card from '../Card'
 import Slides from '../Slides'
+import { Project } from '../../services/api'
 import * as S from './styles'
 
-const Section = () => {
+type Props = {
+  onOpenModal: (projeto: Project) => void
+}
+
+const Section = ({ onOpenModal }: Props) => {
   return (
     <S.Div id="destaques" className="container">
       <S.Title>Destaques</S.Title>
-      <Slides />
+      <Slides onOpenModal={onOpenModal} />
     </S.Div>
   )
 }

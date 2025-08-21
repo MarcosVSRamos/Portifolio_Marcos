@@ -27,7 +27,7 @@ function App() {
       <GlobalCss />
       <Header />
       <SobreMim />
-      <Section />
+      <Section onOpenModal={openModal} />
       <ProjectsSection projects={projects} onOpenModal={openModal} />
       <Footer />
 

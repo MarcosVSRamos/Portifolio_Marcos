@@ -6,7 +6,9 @@ export const Div = styled.div`
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: ${colors.ice};
+  background: ${colors.efeitoWhite1};
+  backdrop-filter: blur(8px);
+  border: 1px solid ${colors.efeitoBorda};
   padding-bottom: 64px;
   padding-top: 22px;
 `
