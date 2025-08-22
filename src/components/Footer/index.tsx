@@ -10,19 +10,19 @@ const Footer = () => (
   <S.Container>
     <S.List>
       <li>
-        <a>
+        <a href="https://www.linkedin.com/in/marcos-vinicius-santos-ramos-dev">
           <img src={linkedin} alt="Linkedin" />
           <span>Linkedin</span>
         </a>
       </li>
       <li>
-        <a>
+        <a href="https://github.com/MarcosVSRamos">
           <img src={gitHub} alt="GitHub" />
           <span>GitHub</span>
         </a>
       </li>
       <li>
-        <a>
+        <a href="https://santosramosmarcosvinicius@gmail.com">
           <img src={email} alt="E-mail" />
           <span>E-mail</span>
         </a>

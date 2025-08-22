@@ -9,7 +9,7 @@ export const Div = styled.div`
   background: ${colors.efeitoBlue1};
   backdrop-filter: blur(8px);
   border: 1px solid ${colors.efeitoBorda};
-  padding: 40px 0;
+  padding: 80px 0;
 
   h2 {
     margin: 0 auto 40px;

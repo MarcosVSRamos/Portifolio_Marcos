@@ -24,6 +24,8 @@ export const List = styled.li`
       width: 80px;
       padding-left: 100px;
       cursor: pointer;
+      text-decoration: none;
+      color: ${colors.grey};
 
       img {
         width: 30px;

@@ -71,7 +71,7 @@ export const TextDetails = styled.div`
 
     p {
       font-size: 12px;
-      margin: 34px 0;
+      margin: 34px 0 0 0;
       color: ${colors.green};
       line-height: 1.5;
     }

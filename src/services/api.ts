@@ -22,6 +22,10 @@ import backgroundTestes from '../assets/images/testes/backgroundTestes.png'
 import bannerTestes from '../assets/images/testes/backgroundTestes.png'
 import banner2Testes from '../assets/images/testes/cmd.png'
 
+import bannerListaTarefas from '../assets/images/lista-de-tarefas/banner-tarefas.png'
+import banner2ListaTarefas from '../assets/images/lista-de-tarefas/banner2-tarefas.png'
+import backgroundListaTarefas from '../assets/images/lista-de-tarefas/background-tarefas.png'
+
 export type Project = {
   id: string
   title: string
@@ -95,12 +99,11 @@ export const projects: Project[] = [
       'Reactj',
       'Styled-Components',
       'Redux',
-      'React-Router-Dom',
-      'React-Router-Hash-Link',
       'Yup',
       'Tolkit',
       'Figma',
-      'API-AJAX'
+      'API-AJAX',
+      'React-Router-Hash-Link'
     ],
     gallery: [bannerEplay, banner2Eplay, banner3Eplay, backgroundEplay],
     linkGithub: 'https://github.com/MarcosVSRamos/projetoFinalFront',
@@ -111,7 +114,7 @@ export const projects: Project[] = [
     id: '4',
     title: 'Terraria Wiki',
     description:
-      'Um site de restaurantes com seus respectivos cardápios. Desenvolvido em React com requisições de API por AJAX',
+      'Este projeto tem o intuito de praticar e desenvolver algumas habilidades na programação front-end criando um site com o tema do jogo Terraria.',
     emphasis: true,
     language: 'HTML',
     banner: bannerTerraria,
@@ -135,6 +138,20 @@ export const projects: Project[] = [
     languagesAndFrameworks: ['TypeScript', 'CSS', 'HTML'],
     gallery: [bannerTestes, banner2Testes],
     linkGithub: 'https://github.com/MarcosVSRamos/exercicio-M33_tests'
+  },
+  {
+    id: '6',
+    title: 'Lista de tarefas',
+    description:
+      'Este é um projeto desenvolvido para fixação de conhecimentos em manipulação de estado utilizando Redux juntamente com o React.Js Uma lista de tarefas com funções como: Adicionar tarefas, Editar e remover, também com marcadores de prioridade, pesquisa por nome ou por categoria.',
+    emphasis: false,
+    language: 'React.js',
+    banner: bannerListaTarefas,
+    background: backgroundListaTarefas,
+    languagesAndFrameworks: ['React', 'Redux', 'Styled-Components'],
+    gallery: [banner2ListaTarefas, bannerListaTarefas],
+    linkGithub: 'https://github.com/MarcosVSRamos/Modulo-32-projeto-5',
+    linkVersel: 'https://lista-de-tarefas-jade-nu.vercel.app/'
   }
 ]
 

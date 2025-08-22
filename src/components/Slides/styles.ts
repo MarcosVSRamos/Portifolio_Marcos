@@ -2,14 +2,19 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const Div = styled.div`
-  width: 640px;
-  height: 360px;
+  width: 880px;
+  height: 540px;
   border: solid 2px ${colors.blueBlack};
   position: relative;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   overflow: hidden;
   border-radius: 8px;
+  cursor: pointer;
+
+  .direita {
+    right: 8px;
+  }
 `
 
 export const Img = styled.img`
@@ -69,17 +74,14 @@ export const TitleBanner = styled.h3`
   background: rgba(0, 0, 0, 0.4);
 `
 
-export const SetasContainer = styled.div`
+export const Setas = styled.button`
   position: absolute;
   top: 40%;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
-
-  button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
 `

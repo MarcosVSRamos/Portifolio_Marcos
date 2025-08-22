@@ -6,6 +6,10 @@ export const DivCard = styled.div`
   background-color: ${colors.black};
   border: solid 2px ${colors.grey};
   width: 200px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   h4 {
     padding-bottom: 4px;
@@ -14,6 +18,9 @@ export const DivCard = styled.div`
   p {
     font-size: 12px;
     color: ${colors.green};
+  }
+
+  > div {
   }
 `
 export const DivImage = styled.div`
@@ -45,7 +52,7 @@ export const Button = styled.button`
   width: 95%;
   background-color: ${colors.grey};
   border: none;
-  margin: 8px 0;
+  margin: 6px 4px;
   cursor: pointer;
 `
 

@@ -16,22 +16,24 @@ const Card = ({ project, onOpenModal }: PropsModal) => {
 
   return (
     <S.DivCard id={project.id}>
-      <S.DivImage>
-        <S.Tag>
-          {project.profissional && (
-            <span className="profissional">Profissional</span>
-          )}
-          {project.emphasis && <span>Destaque</span>}
-          <span>{project.language}</span>
-        </S.Tag>
-        <S.Img
-          src={project.background}
-          alt={project.title}
-          onClick={() => onOpenModal(project)}
-        />
-      </S.DivImage>
-      <h4>{project.title}</h4>
-      <p>{getDescrition(project.description)}</p>
+      <div>
+        <S.DivImage>
+          <S.Tag>
+            {project.profissional && (
+              <span className="profissional">Profissional</span>
+            )}
+            {project.emphasis && <span>Destaque</span>}
+            <span>{project.language}</span>
+          </S.Tag>
+          <S.Img
+            src={project.background}
+            alt={project.title}
+            onClick={() => onOpenModal(project)}
+          />
+        </S.DivImage>
+        <h4>{project.title}</h4>
+        <p>{getDescrition(project.description)}</p>
+      </div>
       <S.Button type="button" onClick={() => onOpenModal(project)}>
         Saiba Mais
       </S.Button>

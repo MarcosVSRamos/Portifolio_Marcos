@@ -30,6 +30,7 @@ export const DivText = styled.div`
       max-width: 100%;
       margin: 18px 0;
       color: ${colors.green};
+      line-height: 1.5;
       `
 
 export const Image = styled.img`
@@ -69,6 +70,7 @@ export const Text = styled.p`
   width: 80%;
   margin: 0 auto;
   color: ${colors.green};
+  line-height: 1.5;
 `
 export const Titlle = styled.h4`
   margin: 18px auto 18px;

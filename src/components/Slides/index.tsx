@@ -49,33 +49,41 @@ const Slides = ({ onOpenModal }: Props) => {
 
   return (
     <S.Div data-fade>
-      <S.Img
-        onClick={() => onOpenModal(projetoAtual)}
-        key={`atual-${indice}`}
-        src={projetoAtual.banner}
-        alt={`Projeto ${projetoAtual.title}`}
-        className={`atual ${proximoIndice !== null ? `saindo-${direcao}` : ''}`}
-      />
-
-      {proximoIndice !== null && (
+      <div onClick={() => onOpenModal(projetoAtual)}>
         <S.Img
-          key={`proxima-${proximoIndice}`}
-          src={projetoProximo?.banner}
-          alt={`Projeto ${projetoProximo?.title}`}
-          className={`proxima entrando-${direcao}`}
+          key={`atual-${indice}`}
+          src={projetoAtual.banner}
+          alt={`Projeto ${projetoAtual.title}`}
+          className={`atual ${
+            proximoIndice !== null ? `saindo-${direcao}` : ''
+          }`}
         />
-      )}
 
-      <S.TitleBanner>{projetoAtual.title}</S.TitleBanner>
+        {proximoIndice !== null && (
+          <S.Img
+            key={`proxima-${proximoIndice}`}
+            src={projetoProximo?.banner}
+            alt={`Projeto ${projetoProximo?.title}`}
+            className={`proxima entrando-${direcao}`}
+          />
+        )}
 
-      <S.SetasContainer>
-        <button type="button" onClick={() => mudarImagem('left')}>
-          <img src={setaEsquerda} alt="Anterior" />
-        </button>
-        <button type="button" onClick={() => mudarImagem('right')}>
-          <img src={setaDireita} alt="Próximo" />
-        </button>
-      </S.SetasContainer>
+        <S.TitleBanner>{projetoAtual.title}</S.TitleBanner>
+      </div>
+      <S.Setas
+        className="esquerda"
+        type="button"
+        onClick={() => mudarImagem('left')}
+      >
+        <img src={setaEsquerda} alt="Anterior" />
+      </S.Setas>
+      <S.Setas
+        className="direita"
+        type="button"
+        onClick={() => mudarImagem('right')}
+      >
+        <img src={setaDireita} alt="Próximo" />
+      </S.Setas>
     </S.Div>
   )
 }

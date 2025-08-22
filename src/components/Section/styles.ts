@@ -3,14 +3,15 @@ import { colors } from '../../styles'
 
 export const Div = styled.div`
   display: flex;
+  height: 100vh;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  justify-content: center;
+  margin-top: -34px;
   background: ${colors.efeitoWhite1};
   backdrop-filter: blur(8px);
   border: 1px solid ${colors.efeitoBorda};
-  padding-bottom: 64px;
-  padding-top: 22px;
 `
 
 export const Title = styled.h2`
