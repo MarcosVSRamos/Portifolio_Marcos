@@ -71,7 +71,7 @@ body {
   scroll-margin-top: 80px;
 
   @media (max-width: ${breakpoints.desktop}) {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .relative {

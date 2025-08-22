@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Div = styled.div`
   height: 100%;
@@ -19,6 +19,9 @@ export const HeaderSection = styled.div`
   h3 {
     font-size: 26px;
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: block;
   }
 `
 export const DivText = styled.div`
