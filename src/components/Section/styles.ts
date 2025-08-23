@@ -9,6 +9,7 @@ export const Div = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: -34px;
+  padding: 24px 0 44px;
   background: ${colors.efeitoWhite1};
   backdrop-filter: blur(8px);
   border: 1px solid ${colors.efeitoBorda};
