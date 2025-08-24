@@ -84,11 +84,11 @@ export const TextDetails = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    margin-left: 12px;
     justify-content: space-around;
+    margin-left: 14px;
 
     div {
-      width: 188px;
+      width: 168px;
       p {
         font-size: 10px;
         margin-top: 16px;
@@ -175,7 +175,7 @@ export const Images = styled.div`
     grid-template-columns: 1fr;
     gap: 24px;
     img {
-      width: 144px;
+      width: 140px;
       height: 92px;
     }
   }
