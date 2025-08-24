@@ -20,7 +20,7 @@ export const HeaderSection = styled.div`
     font-size: 26px;
   }
 
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (max-width: ${breakpoints.desktop}) {
     display: block;
   }
 `

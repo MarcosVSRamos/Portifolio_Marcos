@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Div = styled.div`
   position: fixed;
@@ -13,6 +13,14 @@ export const Div = styled.div`
   background-color: ${colors.black};
   width: 100%;
   z-index: 1;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 90%;
+    display: none;
+    h1 {
+      font-size: 16px;
+    }
+  }
 `
 
 export const NavBar = styled.nav`
