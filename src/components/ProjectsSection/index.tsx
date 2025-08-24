@@ -2,7 +2,6 @@ import { useFadeInOnScroll } from '../../utils'
 import Card from '../Card'
 import { Project } from '../../services/api'
 import * as S from './styles'
-import { useState } from 'react'
 
 type Props = {
   projects: Project[]

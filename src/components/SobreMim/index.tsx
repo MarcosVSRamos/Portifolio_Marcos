@@ -3,7 +3,6 @@ import perfil from '../../assets/images/perfil.jpg'
 import github from '../../assets/images/github.png'
 import gmail from '../../assets/images/gmail.png'
 import linkedin from '../../assets/images/linkedin.png'
-import { GradientDivider } from '../../styles'
 import { useFadeInOnScroll } from '../../utils'
 
 const SobreMim = () => {

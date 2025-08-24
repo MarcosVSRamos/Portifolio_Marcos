@@ -1,15 +1,13 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Div = styled.div`
   display: flex;
-  height: 100vh;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-top: -34px;
-  padding: 24px 0 44px;
+  padding: 44px 0 68px;
   background: ${colors.efeitoWhite1};
   backdrop-filter: blur(8px);
   border: 1px solid ${colors.efeitoBorda};
@@ -22,6 +20,10 @@ export const Title = styled.h2`
   color: ${colors.blueBlack};
   font-weight: bold;
   font-size: 32px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    font-size: 22px;
+  }
 `
 
 export const List = styled.ul`

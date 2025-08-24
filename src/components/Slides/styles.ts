@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Div = styled.div`
   width: 880px;
@@ -14,6 +14,16 @@ export const Div = styled.div`
 
   .direita {
     right: 8px;
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 660px;
+    height: 380px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 90%;
+    height: 190px;
   }
 `
 

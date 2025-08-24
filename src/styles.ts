@@ -20,8 +20,8 @@ export const GradientDivider = styled.div`
 `
 
 export const breakpoints = {
-  desktop: '1024',
-  tablet: '768'
+  desktop: '1024px',
+  tablet: '767px'
 }
 
 const GlobalCss = createGlobalStyle`
@@ -71,7 +71,6 @@ body {
   scroll-margin-top: 80px;
 
   @media (max-width: ${breakpoints.desktop}) {
-    max-width: 90%;
   }
 
   .relative {

@@ -21,20 +21,35 @@ export const HeaderSection = styled.div`
   }
 
   @media (max-width: ${breakpoints.desktop}) {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 32px 0;
+
+    h3 {
+      font-size: 22px;
+    }
   }
 `
 export const DivText = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    width: 640px;
+    max-width: 100%;
+    margin: 18px 0;
+    color: ${colors.green};
+    line-height: 1.5;
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-top: 24px;
+
     p {
-      width: 640px;
-      max-width: 100%;
-      margin: 18px 0;
-      color: ${colors.green};
-      line-height: 1.5;
-      `
+      max-width: 360px;
+    }
+  }
+`
 
 export const Image = styled.img`
   width: 244px;
@@ -49,19 +64,24 @@ export const Image = styled.img`
 
 export const DivLinksAndImg = styled.div`
   display: block;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 90%;
+  }
 `
 
 export const DivSocialMedia = styled.div`
   display: flex;
   width: 120px;
   justify-content: center;
-  margin: 8px auto;
-  border-bottom: solid 1px ${colors.grey};
+  margin: 12px auto;
 
   a {
     margin: 0 4px;
     img {
       width: 30px;
+      background-color: ${colors.efeitoWhite1};
+      border-bottom: solid 1px ${colors.grey};
       border: solid 1px ${colors.blue};
       border-radius: 4px;
       box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
@@ -74,6 +94,11 @@ export const Text = styled.p`
   margin: 0 auto;
   color: ${colors.green};
   line-height: 1.5;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 90%;
+    text-align: center;
+  }
 `
 export const Titlle = styled.h4`
   margin: 18px auto 18px;
