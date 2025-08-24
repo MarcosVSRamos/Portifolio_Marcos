@@ -132,6 +132,12 @@ export const LinkProjects = styled.a`
 
   @media (max-width: ${breakpoints.tablet}) {
     display: block;
+    margin: 4px 0;
+
+    &:hover {
+      background-color: ${colors.green};
+      color: ${colors.black};
+    }
   }
 `
 
