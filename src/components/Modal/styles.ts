@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Modal = styled.div`
   position: fixed;
@@ -14,6 +14,9 @@ export const Modal = styled.div`
 
   &.visible {
     display: flex;
+  }
+
+  @media (max-widht: ${breakpoints.tablet}) {
   }
 
   .overLay {
@@ -40,9 +43,12 @@ export const ModalContent = styled.div`
   z-index: 1;
   box-shadow: 4px 4px 8px rgba(80, 224, 32, 0.4);
 
-  header {
-    margin: 12px auto;
-    text-align: center;
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 90%;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    height: 500px;
   }
 `
 
@@ -74,6 +80,19 @@ export const TextDetails = styled.div`
       margin: 34px 0 0 0;
       color: ${colors.green};
       line-height: 1.5;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-left: 12px;
+    justify-content: space-around;
+
+    div {
+      width: 188px;
+      p {
+        font-size: 10px;
+        margin-top: 16px;
+      }
     }
   }
 `
@@ -110,6 +129,10 @@ export const LinkProjects = styled.a`
     background-color: ${colors.ice};
     color: ${colors.blueBlack};
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: block;
+  }
 `
 
 export const Langs = styled.div`
@@ -118,6 +141,13 @@ export const Langs = styled.div`
   .litle-title {
     font-size: 12px;
     margin-bottom: 8px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    .litle-title {
+      font-size: 10px;
+      margin-bottom: 8px;
+    }
   }
 `
 
@@ -134,8 +164,27 @@ export const Images = styled.div`
     object-fit: cover;
     border-radius: 8px;
   }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    img {
+      width: 180px;
+      height: 88px;
+    }
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    img {
+      width: 144px;
+      height: 92px;
+    }
+  }
 `
 
 export const TextProject = styled.p`
   font-size: 12px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 10px;
+  }
 `

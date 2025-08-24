@@ -42,7 +42,7 @@ export const DivText = styled.div`
     line-height: 1.5;
   }
 
-  @media (max-width: ${breakpoints.desktop}) {
+  @media (max-width: ${breakpoints.tablet}) {
     margin-top: 24px;
 
     p {
