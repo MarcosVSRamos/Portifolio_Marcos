@@ -20,7 +20,7 @@ const Header = () => {
         <a href="#destaques">Destaques</a>
         <a href="#projects">All Projects</a>
       </S.NavBar>
-      <S.Hamburguer>
+      <S.Hamburguer className="menu-sanduiche">
         <button onClick={openMenu}>
           <span></span>
           <span></span>
