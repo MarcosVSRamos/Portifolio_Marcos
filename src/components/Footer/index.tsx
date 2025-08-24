@@ -22,7 +22,7 @@ const Footer = () => (
         </a>
       </li>
       <li>
-        <a href="https://santosramosmarcosvinicius@gmail.com">
+        <a href="mailto:santosramosmarcosvinicius@gmail.com">
           <img src={email} alt="E-mail" />
           <span>E-mail</span>
         </a>

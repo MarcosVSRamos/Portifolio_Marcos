@@ -34,7 +34,7 @@ const SobreMim = () => {
               <a href="https://www.linkedin.com/in/marcos-vinicius-santos-ramos-dev">
                 <img src={linkedin} alt="linkedin" />
               </a>
-              <a href="https://santosramosmarcosvinicius@gmail.com">
+              <a href="mailto:santosramosmarcosvinicius@gmail.com">
                 <img src={gmail} alt="e-mail" />
               </a>
               <a href="https://github.com/MarcosVSRamos">
